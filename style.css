@@ -1,0 +1,338 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans&family=Festive&display=swap');
+@font-face {
+    font-family: 'festive';
+    src: url('./fonts/Festive-Regular.ttf');
+}
+@font-face {
+    font-family: 'bebas neue';
+    src: url('./fonts/BebasNeue-Regular.ttf');
+}
+@font-face {
+    font-family: 'dm sans';
+    src: url('./fonts/DMSans-Regular.ttf');
+}
+
+/* defaults */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("images/background-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div h1, h2, h3{
+    font-family: 'bebas neue', cursive;
+    letter-spacing: 2px;
+}
+
+ul li, p, button{
+    font-family: 'dm sans', sans-serif;
+}
+
+/* header */
+header{
+    background-color: rgba(0,0,0, 0.6);
+    padding: 15px 10px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+header h1{
+    margin: 0;
+    display: inline;
+    font-family: festive, cursive;
+    font-size: 60px;
+}
+
+header h1.options{
+    display: block;
+    float: right;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+header h1 a, header h1.options a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header h1.options.hide{
+    display: none;
+}
+
+header ul.menu{
+    display: none;
+    list-style-type: none;
+    font-size: 24px;
+    text-align: center;
+    padding: 0;
+}
+
+header ul.menu li a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.8);
+    line-height: 1.5;
+    border: 1px solid #fff;
+    display: block;
+    margin: 6px;
+}
+
+header ul.menu.show{
+    display: block;
+}
+
+/* content */
+div.container{
+    background-color: none;
+}
+
+div.container div.category{
+    background-color: rgba(0,0,0, 0.6);
+    border: 2px solid #fff;
+    border-radius: 0px;
+    margin: 20px 40px;
+    padding: 20px 20px;
+}
+
+div.container div.category div.box{
+    margin: 0 20px;
+}
+
+div.container div.category div.box a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+div.container div.category h1{
+    margin: 0;
+    text-transform: uppercase;
+    /* font-family: serif; */
+    font-size: 36px;
+}
+
+div.container div.category i.fas.fa-chevron-circle-right{
+    font-size: 50px;
+}
+
+/* description-box */
+div.container div.description-box{
+    border: 2px solid #fff;
+    border-radius: 0px;
+    margin: 40px;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.6)
+}
+
+div.container div.description-box div.main-image{
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+div.container div.description-box div.main-image img{
+    width: 60%;
+    position: relative;
+    padding-top: 60px;
+}
+
+div.thank-you img{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 40%;
+}
+
+div.container div.description-box div.main-image div.main-text{
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 200px;
+    background: linear-gradient(rgba(0,0,0,0), #fff);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+/* .main-image .main-text span{
+    font-size: 25px;
+} */
+
+div.container div.description-box h1{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+div.container div.description-box h2{
+    font-size: 36px;
+    padding-top: 20px;
+}
+
+div.container div.description-box .col-1 h2{
+    padding-top: 50px;
+}
+
+div.container div.description-box p{
+    font-size: 30px;
+    padding: 40px 40px 0;
+}
+
+/* grid system */
+.row{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+}
+
+.row::after{
+    display: block;
+}
+
+.col-1{width:25%;}
+.col-2{width:50%;}
+.col-3{width:75%;}
+.col-4{width:100%;}
+
+/* input form */
+div.extras{
+    padding: 0 40px 40px;
+}
+
+div.extras h3{
+    font-size: 28px;
+    padding-left: 40px;
+}
+
+div.extras ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 40px;
+}
+
+div.extras ul li{
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+div.extras textarea{
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+}
+
+div.description-box button{
+    display: block;
+    margin: auto;
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 30px;
+    font-size: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #666;
+    color: white;
+}
+
+div.description-box button:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px){
+
+    header h1{
+        font-size: 30px;
+    }
+
+    div.container div.category{
+        margin: 20px;
+    }
+    
+    div.container div.category div.box{
+        margin: 0;
+    }
+
+    div.container div.category div.box h1{
+        font-size: 22px;
+        padding: 0 10px;
+    }
+    div.container div.category div.box i.fas.fa-chevron-circle-right{
+        font-size: 30px;
+    }
+
+    div.container div.description-box div.main-image{
+        background-position: top;
+        width: 100%;
+        /* min-width: 450px; */
+        overflow: hidden;
+        height: 400px;
+    }
+    div.container div.description-box div.main-image img{
+        width: 90%;
+        padding-top: 20px;
+    }
+    div.container div.description-box div.main-image div.main-text{
+        width: 90%;
+    }
+
+    div.container div.description-box div.main-text h1{
+        font-size: 20px;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    div.container div.description-box p{
+        padding-top: 0;
+    }
+
+    div.thank-you img{
+        width: 80%;
+    }
+
+    .row{
+        display: block;
+        text-align: center;
+    }
+
+    .col-1, .col-2, .col-3, .col-4{
+        width: 100%;
+    }
+
+    div.container div.description-box div.col-1 h2{
+        font-size: 30px;
+        padding-top: 0px;
+    }
+
+    div.extras ul, h3{
+        text-align: left;;
+    }
+
+    div.extras textarea{
+        width: 90%;
+    }
+
+    div.description-box button{
+        width: 80%;
+        padding: 20px;
+    }
+
+
+
+}
+
+
+
+
+

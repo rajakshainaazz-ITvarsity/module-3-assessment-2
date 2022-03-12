@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fontAwesome/css/all.css">
+        <title>Restaurant | Home | Starters | Starter</title>
+    </head>
+
+    <body>
+        <header>
+            <h1><a href="index.html">Captain's Feast</a></h1>
+            <h1 class="options" id="options-t">
+                <a href="javascript:void(0);"
+                    onclick="showMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </h1>
+            <h1 class="options hide" id="options-x">
+                <a href="javascript:void(0);"
+                    onclick="showMenu()">
+                    <i class="fas fa-times"></i>
+                </a>
+            </h1>
+            <div>
+                <ul id="hidden-menu" class="menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="2-1-starters.html">starter</a></li>
+                    <li><a href="2-2-meals.html">meal</a></li>
+                    <li><a href="2-3-desserts.html">dessert</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="description-box">
+                <div class="main-image">
+                    <img src="images/starter 1-1.jpg">
+                    <div class="main-text">
+                        <h1><span>springbok & rocket carpaccio</span></h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <p>Thin slices of smoked Springbok topped with fresh 
+                            rocket dressed with lemon & extra virgin olive oil 
+                            then sprinkled with a local parmesan cheese.
+                        </p>
+                    </div>
+                    <div class="col-1">
+                        <h2>price : R 95
+                            <br>
+                            serving : 1</h2>
+                    </div>
+                    
+                </div>
+
+                <h2>add-on items</h2>
+
+                <div class="row">
+                    <div class="col-1">
+                        <div class="extras">
+                            <h3>eats</h3>
+                            <ul class="eats">
+                                <li>
+                                    <input type="checkbox" id="chips">
+                                    <label for="chips">chips</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="salad">
+                                    <label for="salad">salad</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="wings">
+                                    <label for="wings">wings</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="prawns">
+                                    <label for="prawns">prawns</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="extras">
+                            <h3>sauces</h3>
+                            <ul class="sauces">
+                                <li>
+                                    <input type="checkbox" id="tomato">
+                                    <label for="tomato">tomato</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="garlic">
+                                    <label for="garlic">garlic</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="spinach">
+                                    <label for="spinach">spinach</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chillie">
+                                    <label for="chillie">chillie</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="extras">
+                            <h3>drinks</h3>
+                            <ul class="drinks">
+                                <li>
+                                    <input type="checkbox" id="coke">
+                                    <label for="coke">coke</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="orange">
+                                    <label for="orange">orange</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="wine">
+                                    <label for="wine">wine</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="tea">
+                                    <label for="tea">tea</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="extras">
+                            <h3>Other</h3>
+                            <textarea placeholder="Enter special requests here"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <button onclick="location.href='4-1-thank-you.html'">place order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
